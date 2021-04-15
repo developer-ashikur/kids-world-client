@@ -1,0 +1,24 @@
+header{
+    background: url(../../../images/counter-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+.banner-content h2{
+    font-size: 35px;
+    color: #393d72;
+    font-weight: 300;
+    line-height: 45px;
+}
+.banner-content h1{
+    font-size: 85px;
+    color: #ff4880;
+    font-weight: 600;
+}
+.banner-content h3{
+    font-size: 80px;
+    color: #393d72;
+    font-weight: 300;
+    line-height: 70px;
+    padding-top: 10px;
+    padding-bottom: 46px;
+}
+.banner-content button{}

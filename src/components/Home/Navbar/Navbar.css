@@ -1,0 +1,7 @@
+.my-nav ul li a{
+    font-size: 17px;
+    transition: .3s;
+}
+.my-nav ul li:hover a{
+    color: #ff4880 !important;
+}

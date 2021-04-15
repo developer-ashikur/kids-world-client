@@ -1,0 +1,37 @@
+.about-content{}
+.about-content h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #ff4880;
+    padding-bottom: 27px;
+}
+.about-content h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: #888888;
+    font-family: "Rubik", sans-serif;
+    line-height: 40px;
+}
+.about-content h1{
+    font-size: 60px;
+    line-height: 40px;
+}
+.about-content p{
+    font-size: 14px;
+    line-height: 32px;
+    padding-top: 27px;
+    padding-bottom: 10px;
+}
+.about-content ul{
+    padding-bottom: 27px;
+}
+.about-content ul li{
+    font-size: 14px;
+    color: #888888;
+    line-height: 38px;
+}
+.about-icon{
+    font-size: 18px;
+    color: #ff4880;
+    margin-right: 8px;
+}
