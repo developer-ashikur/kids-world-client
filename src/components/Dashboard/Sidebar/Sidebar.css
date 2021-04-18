@@ -1,0 +1,12 @@
+.sidebar{
+    height: 100vh;
+    background-color: #393d72;
+    color: #fff;
+    padding-left: 20px;
+}
+.sidebar a, i{
+    color: #fff;
+}
+.sidebar a{
+    margin-left: 10px;
+}

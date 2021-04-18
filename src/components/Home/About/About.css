@@ -35,3 +35,9 @@
     color: #ff4880;
     margin-right: 8px;
 }
+@media only screen and (max-width: 768px) {
+    .about-content h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+  }

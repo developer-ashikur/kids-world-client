@@ -11,6 +11,12 @@ ul{
 a{
   text-decoration: none;
 }
+span{
+  display: inline-block;
+}
+.text-brand{
+  color: #393d72;
+}
 .brand-btn {
   display: inline-block;
   font-weight: 600;
@@ -49,4 +55,7 @@ a{
 .brand-title h1{
   font-size: 60px;
   padding-top: 20px;
+}
+.container-fluid{
+  padding-left: 0;
 }

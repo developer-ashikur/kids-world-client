@@ -5,3 +5,11 @@
 .my-nav ul li:hover a{
     color: #ff4880 !important;
 }
+.navbar-logo{
+    width: 50%;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-logo{
+        width: 100px;
+    }
+  }

@@ -21,4 +21,16 @@ header{
     padding-top: 10px;
     padding-bottom: 46px;
 }
-.banner-content button{}
+@media only screen and (max-width: 768px) {
+    .banner-content h2{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .banner-content h1{
+        font-size: 55px;
+    }
+    .banner-content h3{
+        font-size: 43px;
+        line-height: 70px;
+    }
+  }

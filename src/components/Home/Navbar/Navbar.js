@@ -1,45 +1,51 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 import logo from '../../../images/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
-    return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav py-4">
-  <div class="container">
-    <a class="navbar-brand" href="/"><img src={logo} className='img-fluid w-50' alt=""/></a>
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light my-nav py-4">
+      <div className="container">
+        <a className="navbar-brand" href="/"><img src={logo} className='img-fluid navbar-logo' alt="" /></a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link fw-bold" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold px-4" aria-current="page" href="/">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold px-4" aria-current="page" href="/">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold px-4" aria-current="page" href="/">Testimonial</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold px-4" aria-current="page" href="/dashboard">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold px-4" aria-current="page" href="/">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold px-4" aria-current="page" href="/login">Login</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    );
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link fw-bold" aria-current="page" href="/">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link fw-bold px-4" aria-current="page" href="/">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link fw-bold px-4" aria-current="page" href="/">Services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link fw-bold px-4" aria-current="page" href="/">Testimonial</a>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link fw-bold px-4" aria-current="page" to="/dashboard">Dashboard</Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link fw-bold px-4" aria-current="page" href="/">Contact</a>
+            </li>
+            <li className="nav-item">
+              {
+                loggedInUser.isSignedIn || 
+                <Link className="nav-link fw-bold px-4" aria-current="page" to="/login">Login</Link>
+              }
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

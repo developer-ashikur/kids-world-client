@@ -1,0 +1,22 @@
+.testimonial-icon{
+    font-size: 66px;
+    color: #f1f1f5;
+}
+.testimonial-item h5 {
+    font-size: 22px;
+    color: #ff4880;
+    text-transform: capitalize;
+}
+.testimonial-item h6{
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+.testimonial-item p {
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #e7e7e7;
+}
