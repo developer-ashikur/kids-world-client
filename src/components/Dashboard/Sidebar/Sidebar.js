@@ -9,7 +9,7 @@ const Sidebar = ({style}) => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:4000/isAdmin`, {
+        fetch(`https://vast-hollows-66346.herokuapp.com/isAdmin`, {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json',

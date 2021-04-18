@@ -7,7 +7,7 @@ const Bookings = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [enrolledUserInfo, setEnrolledUserInfo] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000/bookedServices?email=${loggedInUser.email}`, {
+        fetch(`https://vast-hollows-66346.herokuapp.com/bookedServices?email=${loggedInUser.email}`, {
             method: 'GET',
             headers: {
                 'Content-Type' : 'application/json',

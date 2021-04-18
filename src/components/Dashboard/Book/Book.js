@@ -9,7 +9,7 @@ const Book = () => {
     const { id } = useParams();
     const [bookedService, setBookedService] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:4000/service/${id}`)
+        fetch(`https://vast-hollows-66346.herokuapp.com/service/${id}`)
             .then(res => res.json())
             .then(data => setBookedService(data))
     }, [id]);
@@ -23,7 +23,7 @@ const Book = () => {
         };
         console.log(enrolledUserInfo);
 
-        fetch('http://localhost:4000/addBooking', {
+        fetch('https://vast-hollows-66346.herokuapp.com/addBooking', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

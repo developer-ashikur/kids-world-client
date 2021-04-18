@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from '../Sidebar/Sidebar';
 import { useForm } from "react-hook-form";
+import Sidebar from '../Sidebar/Sidebar';
 
 const Review = () => {
     const { register, handleSubmit } = useForm();
@@ -13,7 +13,7 @@ const Review = () => {
             description: data.description
         };
         console.log(reviewData);
-        fetch('http://localhost:4000/addReview', {
+        fetch('https://vast-hollows-66346.herokuapp.com/addReview', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

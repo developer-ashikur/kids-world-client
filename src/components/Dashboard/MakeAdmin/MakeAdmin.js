@@ -1,13 +1,13 @@
 import React from 'react';
-import Sidebar from '../Sidebar/Sidebar';
 import { useForm } from "react-hook-form";
+import Sidebar from '../Sidebar/Sidebar';
 
 const MakeAdmin = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
         console.log(data);
-        fetch('http://localhost:4000/addAdmin', {
+        fetch('https://vast-hollows-66346.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

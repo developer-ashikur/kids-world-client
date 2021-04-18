@@ -6,7 +6,7 @@ const OrderList = () => {
     const [enrolledUsers, setEnrolledUsers] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/users')
+        fetch('https://vast-hollows-66346.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setEnrolledUsers(data))
     }, []);

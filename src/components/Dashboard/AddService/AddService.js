@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Sidebar from '../Sidebar/Sidebar';
-import { useForm } from "react-hook-form";
 import axios from 'axios';
+import React, { useState } from 'react';
+import { useForm } from "react-hook-form";
+import Sidebar from '../Sidebar/Sidebar';
 
 const AddService = () => {
     const { register, handleSubmit } = useForm();
@@ -31,7 +31,7 @@ const AddService = () => {
             image: imageURL
         }
         console.log(serviceData);
-        fetch('http://localhost:4000/addService', {
+        fetch('https://vast-hollows-66346.herokuapp.com/addService', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -8,7 +8,7 @@ const SingleOrder = ({ user }) => {
 
     const onSubmit = data => {
         console.log(data);
-        fetch(`http://localhost:4000/updateStatus/${_id}`, {
+        fetch(`https://vast-hollows-66346.herokuapp.com/updateStatus/${_id}`, {
             method: 'PATCH',
             headers: {'content-type' : 'application/json'},
             body: JSON.stringify(data)
